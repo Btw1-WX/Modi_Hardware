@@ -222,7 +222,7 @@ header.row.affix .social-info {
   -webkit-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
 }
-@media (max-width: 1199px) {
+@media (max-width: 100px) {
   .header .logo_part .logo a img {
     width: 100%;
   }
@@ -1273,7 +1273,7 @@ header.row.affix .social-info {
   content: '';
   display: block;
   width: 100%;
-  background: url("../images/workshop/3.png") no-repeat scroll right bottom;
+  
   height: -webkit-calc(100% - 137px);
   height: calc(100% - 137px);
   position: absolute;
@@ -1303,7 +1303,7 @@ header.row.affix .social-info {
   font: normal 15px/26px "Open Sans", sans-serif;
   letter-spacing: 0.3px;
   color: #fff8df;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 .fluid-work-area .work-promo .promo-content h3 {
   font: 500 24px/30px "Open Sans", sans-serif;
@@ -1670,6 +1670,7 @@ header.row.affix .social-info {
 }
 .clients .clients-logos .client {
   padding: 15px;
+  width: calc(100% / 3); /* Adjust this value for different number of columns */
 }
 .clients .clients-logos .inner-logo {
   border: 5px solid #f5f5f5;
@@ -5896,13 +5897,84 @@ a .products-details-cat i {
   font-weight: normal;
 }
 
+.contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+}
+
+.tile img {
+  width: 50%;
+  height: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tile .text {
+  flex-grow: 1;
+}
+
+.gallery-contain{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: #613f13;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+}
+
+.gallery img {
+  width: 100%;
+  max-height: 500px;
+  margin-right: 10px;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.gallery-controls button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery .close {
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
 
 
 /**
 * Cart Page Table responsive css Styles.
 **/
-
+@media (max-width: 640px){
+  .contain{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}  
 @media only screen and (max-width: 991px) {
 
   /* Force table to not be like tables anymore */
@@ -5961,4 +6033,49 @@ a .products-details-cat i {
   td:nth-of-type(4):before { content: "Quantity"; }
   td:nth-of-type(5):before { content: "Total"; }
   td:nth-of-type(6):before { content: "Delete Item"; }
+}
+
+
+.brand_logo {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.brand_logo img {
+  padding: 0%;
+  width: 105px; /* Adjust the width as per your requirement */
+  height: auto; /* This will maintain the image's aspect ratio */
+}
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-row img {
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#map-container {
+  width: 300px;
+  height: 150px;
+  float: right;
+}
+
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
