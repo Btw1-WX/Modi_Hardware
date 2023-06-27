@@ -1225,6 +1225,8 @@ header.row.affix .social-info {
   float: left;
   text-align: right;
   display: block;
+  background: #4f311b;
+}
 }
 @media (max-width: 991px) {
   .fluid-work-area .work-image {
