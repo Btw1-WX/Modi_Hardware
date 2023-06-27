@@ -763,7 +763,9 @@ header.row.affix .social-info {
   color: #ca8e3e;
   text-transform: uppercase;
   letter-spacing: 0.3px !important;
+  /* font-size: 0.9rem; */
 }
+
 .carpenters-h1 span {
   color: #fff;
   font-size: 50px !important;
@@ -1227,7 +1229,7 @@ header.row.affix .social-info {
   display: block;
   background: #4f311b;
 }
-}
+
 @media (max-width: 991px) {
   .fluid-work-area .work-image {
     width: 100%;
@@ -6080,4 +6082,29 @@ a .products-details-cat i {
   left: 0;
   top: 0;
   position: absolute;
+}
+
+.slider-text1{
+  display: block;
+  font-size: 0.9em;
+}
+.slider-text2{
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+ .slider-text1 {
+
+   font-size: 10px;
+   position: relative;
+   bottom: 2em;
+  
+  }
+  .slider-text2 {
+    font-size: 10px;
+    position: relative;
+   bottom: 2em;
+  
+    width: 80%;
+   }
 }
