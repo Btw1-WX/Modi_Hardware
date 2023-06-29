@@ -1130,11 +1130,11 @@ header.row.affix .social-info {
   letter-spacing: 0.3px;
   color: #777777;
 }
-.experience-area .experience-info .content-list {
+.experience-area .experience-info  {
   width: 58%;
 }
 @media (max-width: 1199px) {
-  .experience-area .experience-info .content-list {
+  .experience-area .experience-info {
     width: 54%;
   }
 }
@@ -1155,7 +1155,7 @@ header.row.affix .social-info {
   }
 }
 @media (max-width: 561px) {
-  .experience-area .experience-info .content-image {
+  .experience-area .experience-info  {
     width: 50%;
     float: none;
     margin-left: 12px;
@@ -1163,7 +1163,7 @@ header.row.affix .social-info {
   }
 }
 @media (max-width: 480px) {
-  .experience-area .experience-info .content-image {
+  .experience-area .experience-info {
     width: 60%;
   }
 }
@@ -1178,17 +1178,19 @@ header.row.affix .social-info {
   background: #c56e21;
   Z-INDEX: -1;
 }
-.experience-area .experience-info .content-image img {
+.experience-area .experience-info img {
   max-width: 100%;
 }
 
 .content-list {
+  display: inline-block;
   margin: 0;
   padding: 0;
   float: left;
   width: 100%;
 }
 .content-list li {
+  display: inline-block;
   list-style: none;
 }
 .content-list li a {
@@ -1696,7 +1698,7 @@ header.row.affix .social-info {
 }
 
 .filter_row {
-  margin: 46px 0px;
+  margin: 25px 0px;
 }
 .filter_row ul li {
   float: left;
