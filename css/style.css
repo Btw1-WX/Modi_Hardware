@@ -21,7 +21,7 @@
 
 @media (min-width: 1281px) {
   .container {
-    width: 1200px;
+    width: 90%;
   }
 }
 
@@ -46,7 +46,7 @@ section.row, header.row, footer.row {
 }
 
 .sectpad {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .color h2 {
@@ -1156,15 +1156,16 @@ header.row.affix .social-info {
 }
 @media (max-width: 561px) {
   .experience-area .experience-info  {
-    width: 50%;
+    width: 100%;
     float: none;
-    margin-left: 12px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 480px) {
   .experience-area .experience-info {
-    width: 60%;
+    width: 100%;
+    text-align: justify;
+    margin-right: 5px;
   }
 }
 .experience-area .experience-info .content-image:before {
@@ -1668,7 +1669,7 @@ header.row.affix .social-info {
 
 /*====================================================*/
 .clients {
-  padding-top: 55px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .clients .clients-logos {
@@ -2381,8 +2382,10 @@ header.row.affix .social-info {
 /*====================================================*/
 .who-area {
   position: relative;
-  background: url("../images/who-area/bg.png") no-repeat scroll right bottom;
+  background: url("../images/who-area/1.jpg") no-repeat scroll right bottom;
 }
+
+
 @media (max-width: 991px) {
   .who-area {
     background-image: none;
@@ -2392,7 +2395,7 @@ header.row.affix .social-info {
   margin-top: 50px;
 }
 .who-area .who-are-image {
-  position: relative;
+  position: sticky;
 }
 @media (max-width: 767px) {
   .who-area .who-are-image {
@@ -4942,12 +4945,13 @@ footer.row .footer-top {
   padding: 80px 0px 64px 0px;
   z-index: 0;
 }
+
 footer.row .footer-top:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.807);
   width: 100%;
   height: 100%;
   display: block;
@@ -5093,10 +5097,10 @@ footer.row .footer-top .footer-sidebar .widget.widget-contact ul li .fleft a:hov
   }
 }
 footer.row .footer-top .footer-sidebar .widget.widget-form .submet-form .form-control {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.584);
   border-radius: 0px;
-  margin-bottom: 10px;
-  border: 1px solid #393939;
+  margin: 10px 0px;
+  border: 1px solid #bc945e;
   -webkit-box-shadow: none;
   box-shadow: none;
   font: 400 13px/38px "Open Sans", sans-serif;
@@ -5915,8 +5919,8 @@ a .products-details-cat i {
 }
 
 .tile img {
-  width: 50%;
-  height: 50%;
+  width: 100px;
+  height: 140px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -5939,7 +5943,7 @@ a .products-details-cat i {
 }
 
 .gallery {
-  display: flex;
+  display:inline-flex;
   overflow-x: auto;
 }
 
@@ -5979,6 +5983,7 @@ a .products-details-cat i {
   .contain{
     display: flex;
     flex-wrap: wrap;
+    
   }
 }  
 @media only screen and (max-width: 991px) {
@@ -6050,20 +6055,22 @@ a .products-details-cat i {
 
 .brand_logo img {
   padding: 0%;
-  width: 105px; /* Adjust the width as per your requirement */
+  width: 150px; /* Adjust the width as per your requirement */
   height: auto; /* This will maintain the image's aspect ratio */
 }
 
 .img-row {
   display: flex;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .img-row img {
-  width: 250px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Maintain aspect ratio */
+  padding: 5px;
 }
 
 #map-container {
