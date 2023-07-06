@@ -6095,7 +6095,7 @@ a .products-details-cat i {
 
 .slider-text1{
   display: block;
-  font-size: 0.9em;
+  font-size: 3em;
 }
 .slider-text2{
   display: block;
@@ -6104,13 +6104,13 @@ a .products-details-cat i {
 @media only screen and (max-width: 600px) {
  .slider-text1 {
 
-   font-size: 10px;
+   font-size: 3em;
    position: relative;
    bottom: 2em;
   
   }
   .slider-text2 {
-    font-size: 10px;
+    font-size: 2.7em;
     position: relative;
    bottom: 2em;
   
