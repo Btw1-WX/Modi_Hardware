@@ -2382,7 +2382,7 @@ header.row.affix .social-info {
 /*====================================================*/
 .who-area {
   position: relative;
-  background: url("../images/who-area/1.jpg") no-repeat scroll right bottom;
+  background: url("../about\ us.jpg ") no-repeat scroll right bottom;
 }
 
 
@@ -6095,23 +6095,36 @@ a .products-details-cat i {
 
 .slider-text1{
   display: block;
+<<<<<<< Updated upstream
   font-size: 24px;
+=======
+  font-size: 1.5rem;
+>>>>>>> Stashed changes
 }
 .slider-text2{
   font-sizr: 24px;
   display: block;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 600px) {
  .slider-text1 {
 
+<<<<<<< Updated upstream
    font-size: 24px;
+=======
+   font-size: 1.5rem;
+>>>>>>> Stashed changes
    position: relative;
    bottom: 2em;
   
   }
   .slider-text2 {
+<<<<<<< Updated upstream
     font-size: 24px;
+=======
+    font-size: 1.5rem;
+>>>>>>> Stashed changes
     position: relative;
    bottom: 2em;
   
