@@ -1173,7 +1173,7 @@ header.row.affix .social-info {
 @media (max-width: 480px) {
   .experience-area .experience-info {
     width: 100%;
-    text-align: justify;
+    /* text-align: justify; */
     margin-right: 5px;
   }
 }
