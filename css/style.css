@@ -759,6 +759,7 @@ header.row.affix .social-info {
 }
 
 .carpenters-h1 {
+  padding-top: 75%;
   font: 800 50px/50px "Raleway", sans-serif !important;
   color: #ca8e3e;
   text-transform: uppercase;
@@ -771,16 +772,24 @@ header.row.affix .social-info {
   font-size: 50px !important;
 }
 @media (max-width: 991px) {
-  .carpenters-h1 span {
+  .carpenters-h1.type2 p{
+    padding-left: 40%;
+  }
+  .carpenters-h1 p {
     font-size: 36px !important;
     line-height: 36px !important;
   }
 }
 @media (max-width: 767px) {
-  .carpenters-h1 span {
-    font-size: 24px !important;
-    line-height: 24px !important;
+  .carpenters-h1.type2 p{
+    padding-top: 100%;
+    padding-left: 500%;
   }
+  .carpenters-h1 p {
+    font-size: 11px !important;
+    line-height: 11px !important;
+  }
+
 }
 @media (max-width: 1199px) {
   .carpenters-h1.type2 {
