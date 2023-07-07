@@ -245,78 +245,55 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="container border mt-3 bg-light">
-                    <div class="row">
-                      <div class="col-md-6 border-left py-3">
-                        <h1>Contact Form</h1>
-                        <form id="contact-form">
-                          <div class="form-group">
-                            <h5 for="name">Name</h5>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="name"
-                              placeholder="Enter name"
-                              required
-                            />
+                </div></head>
+                   <body> 
+                    <div class="container border mt-3 bg-light">
+                        <div class="row">
+                          <div class="col-md-6 border-left py-3">
+                            <h1 style="font-size: 40px;">Contact Form</h1>
+                            <div class="form-group">
+                              <h5 for="name" style="font-size: 20px;">Name</h5>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Enter name"
+                                required
+                              />
+                            </div>
+                            <div class="form-group">
+                              <h5 for="email" style="font-size: 20px;">Email</h5>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="Enter email"
+                                required
+                              />
+                            </div>
+                            <div class="form-group">
+                                <h5 for="number" style="font-size: 20px;">Contact Number</h5>
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="number"
+                                  placeholder="Enter contact number"
+                                  pattern="^[0-9]+$"
+                                  required
+                                />
+                              </div>
+       
+                            <div class="form-group">
+                              <h5 for="message" style="font-size: 20px;">Message</h5>
+                              <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
                           </div>
-                          <div class="form-group">
-                            <h5 for="email">Email</h5>
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              placeholder="Enter email"
-                              required
-                            />
-                          </div>
-                          <div class="form-group">
-                            <h5 for="number">Contact Number</h5>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="number"
-                              placeholder="Enter contact number"
-                              required
-                            />
-                          </div>
-                  
-                          <div class="form-group">
-                            <h5 for="message">Message</h5>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                          </div>
-                          <button class="btn btn-primary" onclick="submitForm(event)">Submit</button>
-                        </form>
-                      </div>
+                        </div>
                     </div>
-                  </div>
-                  
-                  <script>
-                    function submitForm(event) {
-                      event.preventDefault(); // Prevent the form from submitting normally
-                  
-                      // Get the form inputs
-                      var nameInput = document.getElementById("name");
-                      var emailInput = document.getElementById("email");
-                      var numberInput = document.getElementById("number");
-                  
-                      // Perform validation
-                      if (nameInput.value === "" || emailInput.value === "" || numberInput.value === "") {
-                        alert("Please fill in all required fields.");
-                        return; // Stop form submission
-                      }
-                  
-                      // If all fields are filled, proceed with form submission
-                      sendMail();
-                    }
-                  
-                    function sendMail() {
-                      // Your code to send the form data
-                      // ...
-                    }
-                  </script>
-                </div>   
+                </body>
+                    
+            </div>   
             </div>           
         </div>
     </div>
