@@ -2432,8 +2432,10 @@ header.row.affix .social-info {
   }
 }
 .who-area .who-are-texts {
-  overflow: hidden;
-  padding-left: 35px;
+  overflow:hidden;
+  padding-left: 25px;
+  padding-right: 10%;
+  margin-right: 5%;
 }
 @media (max-width: 500px) {
   .who-area .who-are-texts {

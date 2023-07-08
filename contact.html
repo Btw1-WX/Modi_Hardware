@@ -250,44 +250,43 @@
                     <div class="container border mt-3 bg-light">
                         <div class="row">
                           <div class="col-md-6 border-left py-3">
-                            <h1 style="font-size: 40px;">Contact Form</h1>
-                            <div class="form-group">
-                              <h5 for="name" style="font-size: 20px;">Name</h5>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="name"
-                                placeholder="Enter name"
-                                required
-                              />
+                            <h1 style="font-size: 40px; margin-top: -10px;">Contact Form</h1>
+                            <div class="form-group" style="border: solid 1px gray; border-radius: 10px; padding:5px 15px;">
+                                <form id="myForm">
+                                    <h5 for="name" style="font-size: 20px;">Name</h5>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Enter name"
+                                        style="margin-bottom: 15px;"
+                                        required>
+
+                                    <h5 for="email" style="font-size: 20px;">Email</h5>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Enter email"
+                                        style="margin-bottom: 15px;"
+                                        required>
+
+                                    <h5 for="number" style="font-size: 20px;">Contact Number</h5>
+                                    <input type="tel"
+                                        class="form-control"
+                                        id="number"
+                                        placeholder="Enter contact number"
+                                        pattern="^[[789][0-9]{9}+$"
+                                        style="margin-bottom: 15px;"
+                                        required >
+                                    
+                                    <h5 for="message" style="font-size: 20px;">Message</h5>
+                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                    <button class="btn btn-primary" onclick="sendMail()" id="myBtn" style="margin: 10px;">
+                                        Submit
+                                    </button>
+                                </form>
                             </div>
-                            <div class="form-group">
-                              <h5 for="email" style="font-size: 20px;">Email</h5>
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                placeholder="Enter email"
-                                required
-                              />
-                            </div>
-                            <div class="form-group">
-                                <h5 for="number" style="font-size: 20px;">Contact Number</h5>
-                                <input
-                                  type="tel"
-                                  class="form-control"
-                                  id="number"
-                                  placeholder="Enter contact number"
-                                  pattern="^[0-9]+$"
-                                  required
-                                />
-                              </div>
-       
-                            <div class="form-group">
-                              <h5 for="message" style="font-size: 20px;">Message</h5>
-                              <textarea class="form-control" id="message" rows="3"></textarea>
-                            </div>
-                            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
                           </div>
                         </div>
                     </div>
