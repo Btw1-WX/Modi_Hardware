@@ -245,10 +245,10 @@
                                 <input type="email" class="form-control" id="email"
                                     placeholder="Enter email" style="margin-bottom: 15px;" required>
 
-                                <h5 for="number" style="font-size: 25px;">Contact Number</h5>
-                                <input type="tel" class="form-control" id="number"
-                                    placeholder="Enter contact number" pattern="^[[789][0-9]{9}+$"
-                                    style="margin-bottom: 15px;" required>
+                                    <h5 for="number" style="font-size: 25px;">Contact Number</h5>
+                                    <input type="tel" class="form-control" id="number" value="+91-"
+                                        placeholder="Enter contact number"  pattern="^[[789][0-9]{9}+$"
+                                        style="margin-bottom: 15px;" required minlength="14" maxlength="14">
 
                                 <h5 for="message" style="font-size: 25px;">Message</h5>
                                 <textarea class="form-control" id="message" rows="3" required></textarea>
