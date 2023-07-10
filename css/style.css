@@ -1641,7 +1641,7 @@ header.row.affix .social-info {
 
 .testimonial .media-left a {
   display: block;
-  width: 170px;
+  width: 345px;
   height: 185px;
   line-height: 185px;
 }
@@ -5971,7 +5971,7 @@ footer.row .footer-top .footer-sidebar .widget+.widget {
 
 footer.row .footer-bottom {
   background: #090909;
-  font: 400 14px/20px "Open Sans", sans-serif;
+  font: 400 17px/20px "Open Sans", sans-serif;
   letter-spacing: 0.3px;
   color: #424242;
   padding: 20px 0px;
@@ -6007,6 +6007,9 @@ footer.row .footer-bottom .right {
   footer.row .footer-bottom .right {
     text-align: center;
     padding-right: 0;
+  }
+  .row-foot{
+    flex-direction: column;
   }
 }
 
