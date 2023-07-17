@@ -7127,3 +7127,16 @@ a .products-details-cat i {
     width: 80%;
   }
 }
+
+.contain
+{
+  height: max-content;
+  width: max-content;
+}
+.tile
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
