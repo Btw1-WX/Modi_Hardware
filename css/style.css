@@ -7577,13 +7577,13 @@ a .products-details-cat i {
 }
 
 #carousel-gallery{
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 500px;
   height: 500px;
 }
 
 #carousel-gallery .item{
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 500px;
   height: 500px;
 }

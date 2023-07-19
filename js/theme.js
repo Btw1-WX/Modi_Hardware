@@ -52,11 +52,13 @@
     });
 
     $('.owl-carousel').owlCarousel({
-        loop:false,
+        loop:true,
         margin:30,
-        items:2,
-        nav: true,
-        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        items:1,
+        lazyload:true,
+        // nav:true,
+        autoplay:1500,
+        autoplayTimeout:1000,
         responsiveClass:true,
         responsive:{
             0:{

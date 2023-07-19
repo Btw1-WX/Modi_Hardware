@@ -80,6 +80,7 @@
     <meta name="msapplication-TileImage" content="../../ms-icon-144x144.html">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
 
     <!--    fonts-->
@@ -425,13 +426,13 @@
                         <span data-dismiss="modal">X</span>
                         <div id="carousel-gallery" class=" owl-theme owl-carousel">
                             <div class="item">
-                                <img src="images/Img/laminates front.jpg" alt="">
+                                <img src="./images/Img/laminates front.jpg" alt="">
                             </div>
                             <div class="item">
                                 <img src="./images/Img/laminates add.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img src="images/Img/laminates-649a7fa11226b.webp" alt="">
+                                <img src="./images/Img/laminates-649a7fa11226b.webp" alt="">
                             </div>
                             <div class="item">
                                 <img src="./images/Img/laminates-1.webp" alt="">
@@ -490,7 +491,7 @@
                         <span data-dismiss="modal">X</span>
                         <div id="carousel-gallery" class=" owl-theme owl-carousel">
                             <div class="item">
-                                <img src="./images/Img/ply.webp" alt="">
+                                <img class="owl-lazy" data-src="https://placehold.it/350x450&text=1" data-src-retina="https://placehold.it/350x250&text=1-retina"src="./images/Img/ply.webp" alt="">
                             </div>
                             <div class="item">
                                 <img src="./images/Img/door add.jpg" alt="">
@@ -929,45 +930,6 @@
     <script>
       
 
-            function modal_gallery(value) {
-                const imagesByIndex = [
-                 ['images/Img/shutteringply.webp', 'images/Img/shuttering ply add.jpg', 'images/Img/shuttring-ply.webp', 'images/Img/Shuttering ply new.webp'],
-                ['images/Img/wpc1-649a7fc588362.webp', 'images/Img/wpc2-649a7fc5dbce2.webp', 'images/Img/wpc-door-649a7fc4e626c.webp'],
-                 ['images/Img/teakplyweb1.webp', 'images/Img/teakplyweb2.webp'],
-                 ['images/Img/door front.jpg', 'images/Img/door add.jpg', 'images/Img/Advance flushdoor.webp', 'images/Img/door-30-mm-649a7f83dd8fe.webp', 'images/Img/flush door new.webp'],
-                ['images/Img/laminates front.jpg', 'images/Img/laminates add.jpg', 'images/Img/laminates-649a7fa11226b.webp', 'images/Img/laminates-1.webp'],
-                ['images/Img/green-panel-1.webp', 'images/Img/green-panel-2.webp'],
-                 ['images/Img/ply.webp', 'images/Img/ply new.webp', 'ply.jpg'],
-                 ['images/Img/board.webp'],
-                ['images/Img/pine-wood-1.webp'],
-                 ['images/Img/veneer front.jpg', 'images/Img/veneer add.jpg', 'images/Img/veneer.webp', 'images/Img/veneer new_.webp', 'images/Img/veneer new 1.webp', 'images/Img/veneer new 4.webp', 'images/Img/veneer new 2', 'veneer.jpg', 'images/Img/veneer 2.jpg', 'images/Img/veneer 3.jpg', 'images/Img/veneer 4.jpg'],
-                 ['images/Img/teak wood new_.webp', 'images/Img/teak wood new 3_.webp', 'images/Img/teak wood new 2_.webp', 'images/Img/Teak wood.jpg'],
-
-        ];
-                let carousel = document.getElementById("carousel-gallery")
-                
-                let showModal = document.getElementById("pgallery")
-                showModal.style.display="flex";
-                console.log(carousel);
-              
-                imagesByIndex[value].forEach(element => {
-                    const itemDiv = document.createElement('div');
-                    itemDiv.classList.add('item');
-
-                    const imgElement = document.createElement('img');
-                            imgElement.classList.add('carousel-image');
-                            imgElement.src = element;
-                            imgElement.alt = '';
-                            itemDiv.appendChild(imgElement);
-                            carousel.appendChild(itemDiv);
-
-                });
-                
-                
-            console.log(imagesByIndex);
-                
-            }
-
           
           
 
@@ -985,7 +947,14 @@
 
 
     </script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Owl Carousel Lazyload Extension -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.lazyload.min.js"></script>
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!--RS-->
