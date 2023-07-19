@@ -50,28 +50,6 @@
             }
         }
     });
-
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:30,
-        items:1,
-        lazyload:true,
-        // nav:true,
-        autoplay:1500,
-        autoplayTimeout:1000,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            1200:{
-                items: 1
-            }
-        }
-    })
     
     function projectMasonry(){
         if ( $('#projects').length ){
